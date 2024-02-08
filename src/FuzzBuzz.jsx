@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import ReactPaginate from 'react-paginate';
 import './fuzz.css'; 
 
@@ -53,6 +54,7 @@ class FizzBuzz extends React.Component {
           </thead>
           <tbody>{rows}</tbody>
         </table>
+
         <ReactPaginate
           previousLabel={'previous'}
           nextLabel={'next'}
@@ -65,6 +67,11 @@ class FizzBuzz extends React.Component {
           containerClassName={'pagination'}
           activeClassName={'active'}
         />
+
+
+      
+
+
       </div>
     );
   }
