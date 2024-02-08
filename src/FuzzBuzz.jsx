@@ -12,10 +12,6 @@ class FizzBuzz extends React.Component {
     };
   }
 
-  handlePageClick = (data) => {
-    this.setState({ currentPage: data.selected });
-  };
-
   render() {
     const { currentPage, itemsPerPage } = this.state;
     const startIndex = currentPage * itemsPerPage;
@@ -67,11 +63,6 @@ class FizzBuzz extends React.Component {
           containerClassName={'pagination'}
           activeClassName={'active'}
         />
-
-
-      
-
-
       </div>
     );
   }
